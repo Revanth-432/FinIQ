@@ -1,7 +1,7 @@
 {
   "name": "financiallearningapp",
   "version": "1.0.0",
-  "main": "index.ts",
+  "main": "expo-router/entry",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
@@ -9,13 +9,34 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^2.2.0",
+    "@react-native-community/slider": "^5.0.1",
+    "@supabase/supabase-js": "^2.95.3",
+    "babel-preset-expo": "~54.0.10",
     "expo": "~54.0.33",
+    "expo-constants": "~18.0.13",
+    "expo-haptics": "~15.0.8",
+    "expo-linking": "~8.0.11",
+    "expo-router": "~6.0.23",
     "expo-status-bar": "~3.0.9",
+    "lucide-react-native": "^0.563.0",
+    "nativewind": "^2.0.11",
     "react": "19.1.0",
-    "react-native": "0.81.5"
+    "react-dom": "19.1.0",
+    "react-native": "0.81.5",
+    "react-native-confetti-cannon": "^1.5.2",
+    "react-native-progress": "^5.0.1",
+    "react-native-safe-area-context": "~5.6.0",
+    "react-native-screens": "~4.16.0",
+    "react-native-svg": "^15.12.1",
+    "react-native-url-polyfill": "^3.0.0",
+    "react-native-web": "^0.21.2",
+    "tailwindcss": "^3.3.2"
   },
   "devDependencies": {
     "@types/react": "~19.1.0",
+    "autoprefixer": "^10.4.24",
+    "postcss": "^8.5.6",
     "typescript": "~5.9.2"
   },
   "private": true
