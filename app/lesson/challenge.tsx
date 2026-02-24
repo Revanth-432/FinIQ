@@ -5,10 +5,14 @@ import { supabase } from '../../lib/supabase';
 import { X, Trophy, AlertTriangle, Play, HelpCircle, ArrowLeft, RotateCcw } from 'lucide-react-native';
 import * as Progress from 'react-native-progress';
 import ConfettiCannon from 'react-native-confetti-cannon';
+import { useBadgeContext } from '../../context/BadgeContext';
+import { evaluateBadges } from '../../utils/badgeEngine';
+import { playCorrectSound, playIncorrectSound, playSuccessSound } from '../../utils/sensoryEngine';
 
 const SCREEN_WIDTH = Dimensions.get('window').width;
 
 export default function LessonChallengeScreen() {
+    const { queueBadgeUnlock } = useBadgeContext();
     const { id } = useLocalSearchParams(); // Lesson ID
     const router = useRouter();
 
@@ -64,19 +68,15 @@ export default function LessonChallengeScreen() {
 
         setSelectedOption(index);
         const currentQuestion = questions[activeIndex];
-        const isCorrect = index === currentQuestion.correct_option;
+        const isCorrect = currentQuestion.correct_option_index !== undefined && currentQuestion.correct_option_index !== null
+            ? index === Number(currentQuestion.correct_option_index)
+            : index === currentQuestion.correct_option; // Fallback
 
         // Challenge Logic: ALL OR NOTHING
         if (!isCorrect) {
-            // Immediate Failure
-            setTimeout(() => {
-                setIsFailed(true);
-            }, 500);
+            playIncorrectSound();
         } else {
-            // Correct - waiting delay before next
-            setTimeout(() => {
-                nextQuestion();
-            }, 800);
+            playCorrectSound();
         }
     };
 
@@ -100,8 +100,46 @@ export default function LessonChallengeScreen() {
                         { user_id: user.id, lesson_id: id, is_completed: true, completed_at: new Date() },
                         { onConflict: 'user_id, lesson_id' }
                     );
+
+                // --- EVALUATE BADGES ---
+                try {
+                    const { count: lessonsCount } = await supabase
+                        .from('user_progress')
+                        .select('*', { count: 'exact', head: true })
+                        .eq('user_id', user.id)
+                        .eq('is_completed', true);
+
+                    const { data: profile } = await supabase
+                        .from('profiles')
+                        .select('streak_count')
+                        .eq('id', user.id)
+                        .single();
+
+                    const { data: progressData } = await supabase
+                        .from('user_progress')
+                        .select('lesson_id')
+                        .eq('user_id', user.id)
+                        .eq('is_completed', true);
+
+                    const completedLessonIds = progressData?.map(p => p.lesson_id) || [];
+
+                    evaluateBadges(
+                        'LESSON_COMPLETE',
+                        {
+                            completedLessonsCount: lessonsCount || 1,
+                            streakCount: profile?.streak_count || 1,
+                            completedLessonIds: completedLessonIds,
+                            completedModuleIds: [] // Mock for now
+                        },
+                        queueBadgeUnlock,
+                        [] // Mock previously earned for now
+                    );
+                } catch (e) {
+                    console.error("Badge Evaluation Error", e);
+                }
             }
             setIsCompleted(true);
+            playSuccessSound();
             setShowConfetti(true);
 
         } catch (error) {
@@ -179,7 +217,7 @@ export default function LessonChallengeScreen() {
                     </View>
 
                     <Text className="text-xl font-bold text-slate-800 text-center leading-8">
-                        {activeCard.question /* Pure Database Text */}
+                        {activeCard.content || activeCard.question /* Pure Database Text */}
                     </Text>
                 </View>
 
@@ -190,7 +228,11 @@ export default function LessonChallengeScreen() {
                     let textColor = 'text-slate-700';
 
                     if (selectedOption !== null) {
-                        if (index === activeCard.correct_option) {
+                        const isThisOptionCorrect = activeCard.correct_option_index !== undefined && activeCard.correct_option_index !== null
+                            ? index === Number(activeCard.correct_option_index)
+                            : index === activeCard.correct_option;
+
+                        if (isThisOptionCorrect) {
                             bgColor = 'bg-green-100';
                             borderColor = 'border-green-400';
                             textColor = 'text-green-800';
@@ -212,6 +254,63 @@ export default function LessonChallengeScreen() {
                         </TouchableOpacity>
                     );
                 })}
+
+                {/* Explanation Box */}
+                {selectedOption !== null && activeCard.explanation && (
+                    <View className={`p-4 rounded-xl mt-4 border ${(activeCard.correct_option_index !== undefined && activeCard.correct_option_index !== null
+                            ? selectedOption === Number(activeCard.correct_option_index)
+                            : selectedOption === activeCard.correct_option)
+                            ? 'bg-green-50 border-green-200'
+                            : 'bg-orange-50 border-orange-200'
+                        }`}>
+                        <Text className={`font-bold text-sm mb-1 ${(activeCard.correct_option_index !== undefined && activeCard.correct_option_index !== null
+                                ? selectedOption === Number(activeCard.correct_option_index)
+                                : selectedOption === activeCard.correct_option)
+                                ? 'text-green-800'
+                                : 'text-orange-800'
+                            }`}>
+                            {(activeCard.correct_option_index !== undefined && activeCard.correct_option_index !== null
+                                ? selectedOption === Number(activeCard.correct_option_index)
+                                : selectedOption === activeCard.correct_option)
+                                ? 'Correct!'
+                                : 'Incorrect'}
+                        </Text>
+                        <Text className={`text-base leading-relaxed ${(activeCard.correct_option_index !== undefined && activeCard.correct_option_index !== null
+                                ? selectedOption === Number(activeCard.correct_option_index)
+                                : selectedOption === activeCard.correct_option)
+                                ? 'text-green-700'
+                                : 'text-orange-700'
+                            }`}>
+                            {activeCard.explanation}
+                        </Text>
+                    </View>
+                )}
+
+                {/* Continue button */}
+                {selectedOption !== null && (
+                    <TouchableOpacity
+                        onPress={() => {
+                            const isCorrect = activeCard.correct_option_index !== undefined && activeCard.correct_option_index !== null
+                                ? selectedOption === Number(activeCard.correct_option_index)
+                                : selectedOption === activeCard.correct_option;
+                            if (isCorrect) {
+                                nextQuestion();
+                            } else {
+                                setIsFailed(true);
+                            }
+                        }}
+                        className={`py-4 rounded-xl mt-6 shadow-sm ${(activeCard.correct_option_index !== undefined && activeCard.correct_option_index !== null
+                                ? selectedOption === Number(activeCard.correct_option_index)
+                                : selectedOption === activeCard.correct_option)
+                                ? 'bg-indigo-600' : 'bg-red-500'}`}
+                    >
+                        <Text className="text-white text-center font-bold text-lg tracking-wide">
+                            {(activeCard.correct_option_index !== undefined && activeCard.correct_option_index !== null
+                                ? selectedOption === Number(activeCard.correct_option_index)
+                                : selectedOption === activeCard.correct_option) ? 'CONTINUE' : 'FINISH CHALLENGE'}
+                        </Text>
+                    </TouchableOpacity>
+                )}
 
             </ScrollView>
 

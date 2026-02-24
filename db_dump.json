@@ -1,0 +1,2060 @@
+[
+  {
+    "id": 95,
+    "title": "Owning India Inc.",
+    "lessons": [
+      {
+        "id": 191,
+        "cards": [
+          {
+            "id": 1209,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 1
+          },
+          {
+            "id": 1210,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 2
+          },
+          {
+            "id": 1211,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 3
+          },
+          {
+            "id": 1212,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 4
+          },
+          {
+            "id": 1213,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 5
+          }
+        ],
+        "title": "Long-Term vs Short-Term"
+      },
+      {
+        "id": 197,
+        "cards": [
+          {
+            "id": 1257,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 1
+          },
+          {
+            "id": 1258,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 2
+          },
+          {
+            "id": 1259,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 3
+          },
+          {
+            "id": 1260,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 4
+          },
+          {
+            "id": 1262,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 6
+          },
+          {
+            "id": 1261,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 5
+          },
+          {
+            "id": 1263,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 7
+          },
+          {
+            "id": 1264,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 8
+          },
+          {
+            "id": 1265,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 9
+          },
+          {
+            "id": 1266,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 10
+          },
+          {
+            "id": 1267,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 11
+          }
+        ],
+        "title": "Long-Term vs Short-Term"
+      },
+      {
+        "id": 198,
+        "cards": [
+          {
+            "id": 1268,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 1
+          },
+          {
+            "id": 1269,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 2
+          },
+          {
+            "id": 1270,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 3
+          },
+          {
+            "id": 1271,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 4
+          },
+          {
+            "id": 1273,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 6
+          },
+          {
+            "id": 1272,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 5
+          },
+          {
+            "id": 1274,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 7
+          },
+          {
+            "id": 1275,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 8
+          },
+          {
+            "id": 1276,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 9
+          },
+          {
+            "id": 1277,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 10
+          },
+          {
+            "id": 1278,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 11
+          }
+        ],
+        "title": "Diversification & Portfolio Basics"
+      },
+      {
+        "id": 199,
+        "cards": [
+          {
+            "id": 1279,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 1
+          },
+          {
+            "id": 1280,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 2
+          },
+          {
+            "id": 1282,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 4
+          },
+          {
+            "id": 1284,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 6
+          },
+          {
+            "id": 1283,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 5
+          },
+          {
+            "id": 1285,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 7
+          },
+          {
+            "id": 1286,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 8
+          },
+          {
+            "id": 1287,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 9
+          },
+          {
+            "id": 1288,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 10
+          },
+          {
+            "id": 1289,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 11
+          },
+          {
+            "id": 1281,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 3
+          }
+        ],
+        "title": "Beginner Stock Mistakes"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Avoiding Financial Scams",
+    "lessons": [
+      {
+        "id": 9,
+        "cards": [
+          {
+            "id": 73,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 1
+          },
+          {
+            "id": 74,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 2
+          },
+          {
+            "id": 75,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 3
+          },
+          {
+            "id": 76,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 4
+          },
+          {
+            "id": 78,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 6
+          },
+          {
+            "id": 77,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 5
+          },
+          {
+            "id": 79,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 7
+          },
+          {
+            "id": 80,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 8
+          },
+          {
+            "id": 81,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 9
+          }
+        ],
+        "title": "Credit Cards & EMIs"
+      },
+      {
+        "id": 10,
+        "cards": [
+          {
+            "id": 82,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 1
+          },
+          {
+            "id": 83,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 2
+          },
+          {
+            "id": 84,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 3
+          },
+          {
+            "id": 85,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 4
+          },
+          {
+            "id": 87,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 6
+          },
+          {
+            "id": 86,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 5
+          },
+          {
+            "id": 88,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 7
+          },
+          {
+            "id": 89,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 8
+          },
+          {
+            "id": 90,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 9
+          }
+        ],
+        "title": "Risk vs Return"
+      },
+      {
+        "id": 11,
+        "cards": [
+          {
+            "id": 91,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 1
+          },
+          {
+            "id": 92,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 2
+          },
+          {
+            "id": 93,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 3
+          },
+          {
+            "id": 94,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 4
+          },
+          {
+            "id": 96,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 6
+          },
+          {
+            "id": 95,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 5
+          },
+          {
+            "id": 97,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 7
+          },
+          {
+            "id": 98,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 8
+          },
+          {
+            "id": 99,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 9
+          }
+        ],
+        "title": "Stocks & Mutual Funds"
+      },
+      {
+        "id": 12,
+        "cards": [
+          {
+            "id": 103,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 4
+          },
+          {
+            "id": 105,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 6
+          },
+          {
+            "id": 102,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 3
+          },
+          {
+            "id": 104,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 5
+          },
+          {
+            "id": 106,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 7
+          },
+          {
+            "id": 107,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 8
+          },
+          {
+            "id": 108,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 9
+          },
+          {
+            "id": 100,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 1
+          },
+          {
+            "id": 101,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 2
+          }
+        ],
+        "title": "Spotting Financial Scams"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "title": "Decoding the Money Matrix",
+    "lessons": [
+      {
+        "id": 1,
+        "cards": [
+          {
+            "id": 1368,
+            "type": "text",
+            "content": "🪙 Fin: \"Meet Rahul. He just bagged a ₹12 LPA tech job! He bought an iPhone on EMI, takes Uber Premium everywhere, and orders Swiggy twice a day.\"",
+            "metadata": {},
+            "order_index": 1
+          },
+          {
+            "id": 1369,
+            "type": "interactive_story",
+            "content": "🪙 Fin: \"It's the 28th of the month. Take a guess: What is Rahul's bank balance?\"",
+            "metadata": {},
+            "order_index": 2
+          },
+          {
+            "id": 1370,
+            "type": "text",
+            "content": "🪙 Fin: \"Spot on. Rahul is what we call 'Premium Broke'. High income, zero wealth.\"",
+            "metadata": {},
+            "order_index": 3
+          },
+          {
+            "id": 1371,
+            "type": "text",
+            "content": "🪙 Fin: \"Here is the brutal truth: Income is just your earning power. It’s what you show off to your relatives. Wealth is the money you secretly *keep*.\"",
+            "metadata": {},
+            "order_index": 4
+          },
+          {
+            "id": 1372,
+            "type": "interactive_story",
+            "content": "🪙 Fin: \"If your entire salary goes straight from your boss to your landlord and Swiggy, what does that make you?\"",
+            "metadata": {},
+            "order_index": 5
+          },
+          {
+            "id": 1373,
+            "type": "text",
+            "content": "🪙 Fin: \"Exactly. Don't be a middleman. Rule #1 of Wealth: Pay Yourself First. The day your salary hits, hide 20% of it in a separate account. Live on the rest.\"",
+            "metadata": {},
+            "order_index": 6
+          },
+          {
+            "id": 1374,
+            "type": "quiz",
+            "content": "🪙 Fin: \"Final check before I give you your XP. Which habit builds wealth faster?\"",
+            "metadata": {},
+            "order_index": 7
+          },
+          {
+            "id": 1375,
+            "type": "swipe_game",
+            "content": "🪙 Fin: \"Let's test your reflexes! Swipe RIGHT for Needs (Essentials). Swipe LEFT for Wants (Luxuries).\"",
+            "metadata": {},
+            "order_index": 8
+          }
+        ],
+        "title": "Why High Income ≠ Wealth"
+      },
+      {
+        "id": 2,
+        "cards": [
+          {
+            "id": 10,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 1
+          },
+          {
+            "id": 11,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 2
+          },
+          {
+            "id": 12,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 3
+          },
+          {
+            "id": 13,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 4
+          },
+          {
+            "id": 15,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 6
+          },
+          {
+            "id": 14,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 5
+          },
+          {
+            "id": 16,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 7
+          },
+          {
+            "id": 17,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 8
+          },
+          {
+            "id": 18,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 9
+          }
+        ],
+        "title": "Save vs Invest (Properly)"
+      },
+      {
+        "id": 3,
+        "cards": [
+          {
+            "id": 19,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 1
+          },
+          {
+            "id": 20,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 2
+          },
+          {
+            "id": 21,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 3
+          },
+          {
+            "id": 22,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 4
+          },
+          {
+            "id": 24,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 6
+          },
+          {
+            "id": 23,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 5
+          },
+          {
+            "id": 25,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 7
+          },
+          {
+            "id": 26,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 8
+          },
+          {
+            "id": 27,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 9
+          }
+        ],
+        "title": "Inflation is Silent Killer"
+      },
+      {
+        "id": 4,
+        "cards": [
+          {
+            "id": 28,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 1
+          },
+          {
+            "id": 29,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 2
+          },
+          {
+            "id": 30,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 3
+          },
+          {
+            "id": 31,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 4
+          },
+          {
+            "id": 33,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 6
+          },
+          {
+            "id": 32,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 5
+          },
+          {
+            "id": 34,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 7
+          },
+          {
+            "id": 35,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 8
+          },
+          {
+            "id": 36,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 9
+          }
+        ],
+        "title": "Start Early (Compounding)"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Escaping the Broke Trap",
+    "lessons": [
+      {
+        "id": 5,
+        "cards": [
+          {
+            "id": 37,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 1
+          },
+          {
+            "id": 38,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 2
+          },
+          {
+            "id": 39,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 3
+          },
+          {
+            "id": 40,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 4
+          },
+          {
+            "id": 42,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 6
+          },
+          {
+            "id": 41,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 5
+          },
+          {
+            "id": 43,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 7
+          },
+          {
+            "id": 44,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 8
+          },
+          {
+            "id": 45,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 9
+          }
+        ],
+        "title": "Where Money Actually Goes"
+      },
+      {
+        "id": 6,
+        "cards": [
+          {
+            "id": 47,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 2
+          },
+          {
+            "id": 48,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 3
+          },
+          {
+            "id": 49,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 4
+          },
+          {
+            "id": 51,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 6
+          },
+          {
+            "id": 50,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 5
+          },
+          {
+            "id": 52,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 7
+          },
+          {
+            "id": 53,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 8
+          },
+          {
+            "id": 54,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 9
+          },
+          {
+            "id": 46,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 1
+          }
+        ],
+        "title": "Budgeting Without Feeling Broke"
+      },
+      {
+        "id": 7,
+        "cards": [
+          {
+            "id": 55,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 1
+          },
+          {
+            "id": 56,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 2
+          },
+          {
+            "id": 57,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 3
+          },
+          {
+            "id": 58,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 4
+          },
+          {
+            "id": 60,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 6
+          },
+          {
+            "id": 59,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 5
+          },
+          {
+            "id": 61,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 7
+          },
+          {
+            "id": 62,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 8
+          },
+          {
+            "id": 63,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 9
+          }
+        ],
+        "title": "Emergency Fund First"
+      },
+      {
+        "id": 8,
+        "cards": [
+          {
+            "id": 64,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 1
+          },
+          {
+            "id": 65,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 2
+          },
+          {
+            "id": 66,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 3
+          },
+          {
+            "id": 67,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 4
+          },
+          {
+            "id": 69,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 6
+          },
+          {
+            "id": 68,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 5
+          },
+          {
+            "id": 70,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 7
+          },
+          {
+            "id": 71,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 8
+          },
+          {
+            "id": 72,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 9
+          }
+        ],
+        "title": "Lifestyle Inflation Trap"
+      }
+    ]
+  },
+  {
+    "id": 93,
+    "title": "Building Your Freedom Fund",
+    "lessons": [
+      {
+        "id": 186,
+        "cards": [
+          {
+            "id": 1156,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 1
+          },
+          {
+            "id": 1157,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 2
+          },
+          {
+            "id": 1158,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 3
+          },
+          {
+            "id": 1159,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 4
+          },
+          {
+            "id": 1161,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 6
+          },
+          {
+            "id": 1160,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 5
+          },
+          {
+            "id": 1162,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 7
+          },
+          {
+            "id": 1163,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 8
+          },
+          {
+            "id": 1164,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 9
+          },
+          {
+            "id": 1165,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 10
+          },
+          {
+            "id": 1166,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 11
+          }
+        ],
+        "title": "Investing vs Trading vs Speculation"
+      },
+      {
+        "id": 187,
+        "cards": [
+          {
+            "id": 1167,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 1
+          },
+          {
+            "id": 1168,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 2
+          },
+          {
+            "id": 1169,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 3
+          },
+          {
+            "id": 1170,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 4
+          },
+          {
+            "id": 1172,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 6
+          },
+          {
+            "id": 1171,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 5
+          },
+          {
+            "id": 1173,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 7
+          },
+          {
+            "id": 1174,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 8
+          },
+          {
+            "id": 1175,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 9
+          },
+          {
+            "id": 1176,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 10
+          },
+          {
+            "id": 1177,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 11
+          }
+        ],
+        "title": "Time Horizon & Risk Capacity"
+      },
+      {
+        "id": 188,
+        "cards": [
+          {
+            "id": 1179,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 2
+          },
+          {
+            "id": 1180,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 3
+          },
+          {
+            "id": 1181,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 4
+          },
+          {
+            "id": 1183,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 6
+          },
+          {
+            "id": 1188,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 11
+          },
+          {
+            "id": 1182,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 5
+          },
+          {
+            "id": 1184,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 7
+          },
+          {
+            "id": 1185,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 8
+          },
+          {
+            "id": 1186,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 9
+          },
+          {
+            "id": 1187,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 10
+          },
+          {
+            "id": 1178,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 1
+          }
+        ],
+        "title": "Asset Classes Explained Clearly"
+      },
+      {
+        "id": 189,
+        "cards": [
+          {
+            "id": 1189,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 1
+          },
+          {
+            "id": 1190,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 2
+          },
+          {
+            "id": 1191,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 3
+          },
+          {
+            "id": 1192,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 4
+          },
+          {
+            "id": 1194,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 6
+          },
+          {
+            "id": 1193,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 5
+          },
+          {
+            "id": 1195,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 7
+          },
+          {
+            "id": 1196,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 8
+          },
+          {
+            "id": 1197,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 9
+          },
+          {
+            "id": 1198,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 10
+          },
+          {
+            "id": 1199,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 11
+          }
+        ],
+        "title": "Goal-Based Investing Framework"
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "title": "The Millionaire Autopilot",
+    "lessons": [
+      {
+        "id": 190,
+        "cards": [
+          {
+            "id": 1200,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 1
+          },
+          {
+            "id": 1201,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 2
+          },
+          {
+            "id": 1202,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 3
+          },
+          {
+            "id": 1203,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 4
+          },
+          {
+            "id": 1205,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 6
+          },
+          {
+            "id": 1204,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 5
+          },
+          {
+            "id": 1206,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 7
+          },
+          {
+            "id": 1207,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 8
+          },
+          {
+            "id": 1208,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 9
+          }
+        ],
+        "title": "What is SIP & How It Works"
+      },
+      {
+        "id": 192,
+        "cards": [
+          {
+            "id": 1214,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 1
+          },
+          {
+            "id": 1215,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 2
+          },
+          {
+            "id": 1216,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 3
+          },
+          {
+            "id": 1217,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 4
+          },
+          {
+            "id": 1219,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 6
+          },
+          {
+            "id": 1218,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 5
+          },
+          {
+            "id": 1220,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 7
+          },
+          {
+            "id": 1221,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 8
+          },
+          {
+            "id": 1222,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 9
+          }
+        ],
+        "title": "Types of Mutual Funds"
+      },
+      {
+        "id": 193,
+        "cards": [
+          {
+            "id": 1223,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 1
+          },
+          {
+            "id": 1224,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 2
+          },
+          {
+            "id": 1225,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 3
+          },
+          {
+            "id": 1226,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 4
+          },
+          {
+            "id": 1228,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 6
+          },
+          {
+            "id": 1227,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 5
+          },
+          {
+            "id": 1229,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 7
+          },
+          {
+            "id": 1230,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 8
+          },
+          {
+            "id": 1231,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 9
+          }
+        ],
+        "title": "Power of Staying Invested"
+      },
+      {
+        "id": 194,
+        "cards": [
+          {
+            "id": 1232,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 1
+          },
+          {
+            "id": 1233,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 2
+          },
+          {
+            "id": 1234,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 3
+          },
+          {
+            "id": 1235,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 4
+          },
+          {
+            "id": 1237,
+            "type": "text",
+            "content": null,
+            "metadata": {},
+            "order_index": 6
+          },
+          {
+            "id": 1236,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 5
+          },
+          {
+            "id": 1238,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 7
+          },
+          {
+            "id": 1239,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 8
+          },
+          {
+            "id": 1240,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 9
+          }
+        ],
+        "title": "Common SIP Mistakes"
+      }
+    ]
+  },
+  {
+    "id": 96,
+    "title": "Your First Salary Blueprint",
+    "lessons": [
+      {
+        "id": 200,
+        "cards": [
+          {
+            "id": 1337,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 9
+          },
+          {
+            "id": 1332,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 4
+          },
+          {
+            "id": 1329,
+            "type": "text",
+            "content": "🎉 Scene: You just got placed! The offer letter says \"CTC: ₹12 Lakhs\". You scream, call your mom, and calculate: 12L / 12 = ₹1 Lakh per month!",
+            "metadata": {},
+            "order_index": 1
+          },
+          {
+            "id": 1330,
+            "type": "text",
+            "content": "🏦 Payday arrives. You check your bank balance. It’s not ₹1 Lakh. It’s ₹78,000. Did the company cheat you?",
+            "metadata": {},
+            "order_index": 2
+          },
+          {
+            "id": 1331,
+            "type": "text",
+            "content": "❌ No. You fell for the \"CTC Trap\". CTC stands for \"Cost to Company\". It is NOT your salary.",
+            "metadata": {},
+            "order_index": 3
+          },
+          {
+            "id": 1333,
+            "type": "text",
+            "content": "Your CTC includes things you never see: 1) Employer PF Contribution (Force-saved), 2) Gratuity (Locked for 5 years), 3) Insurance Premiums.",
+            "metadata": {},
+            "order_index": 5
+          },
+          {
+            "id": 1334,
+            "type": "text",
+            "content": "💡 Example: If your CTC is ₹12L, the company might count ₹50,000 for \"free office cab\" and \"free lunch\" as part of that ₹12L. Sneaky, right?",
+            "metadata": {},
+            "order_index": 6
+          },
+          {
+            "id": 1335,
+            "type": "text",
+            "content": "⚠️ The \"Joining Bonus\" Trap: Sometimes they add a ₹1 Lakh joining bonus to inflate the CTC. But if you leave within a year, you must pay it back!",
+            "metadata": {},
+            "order_index": 7
+          },
+          {
+            "id": 1336,
+            "type": "text",
+            "content": "🚨 Reality Check: Always ask HR for the \"In-Hand\" or \"Net Salary\" figure before accepting. That is your real reality.",
+            "metadata": {},
+            "order_index": 8
+          },
+          {
+            "id": 1338,
+            "type": "text",
+            "content": "Lesson: CTC is for ego. In-Hand is for paying rent. Know the difference.",
+            "metadata": {},
+            "order_index": 10
+          }
+        ],
+        "title": "The CTC Scam: Decoding Your Offer"
+      },
+      {
+        "id": 201,
+        "cards": [
+          {
+            "id": 1342,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 4
+          },
+          {
+            "id": 1347,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 9
+          },
+          {
+            "id": 1339,
+            "type": "text",
+            "content": "💸 So your salary is ₹78k. But wait, why is another ₹3,600 missing? Welcome to \"Deductions\".",
+            "metadata": {},
+            "order_index": 1
+          },
+          {
+            "id": 1340,
+            "type": "text",
+            "content": "The Big One: EPF (Employee Provident Fund). The government forces you to save 12% of your Basic Salary.",
+            "metadata": {},
+            "order_index": 2
+          },
+          {
+            "id": 1341,
+            "type": "text",
+            "content": "😡 You might feel angry. \"Give me my money!\" But here is the magic: Your employer MATCHES that amount.",
+            "metadata": {},
+            "order_index": 3
+          },
+          {
+            "id": 1343,
+            "type": "text",
+            "content": "So, that missing money isn't lost. It is growing at ~8% interest, tax-free, for your retirement. It is essentially an automatic wealth machine.",
+            "metadata": {},
+            "order_index": 5
+          },
+          {
+            "id": 1344,
+            "type": "text",
+            "content": "The Annoying One: Professional Tax. This is a state tax (like Maharashtra or Karnataka) just for having a job. Usually ₹200/month.",
+            "metadata": {},
+            "order_index": 6
+          },
+          {
+            "id": 1345,
+            "type": "text",
+            "content": "The Silent One: Group Health Insurance. Your company deducts a premium to cover your hospital bills. This is good, BUT...",
+            "metadata": {},
+            "order_index": 7
+          },
+          {
+            "id": 1346,
+            "type": "text",
+            "content": "⚠️ Trap: If you quit or get fired, your company insurance vanishes instantly. You are left uncovered.",
+            "metadata": {},
+            "order_index": 8
+          },
+          {
+            "id": 1348,
+            "type": "text",
+            "content": "Pro Tip: Buy a small personal health policy (₹5 Lakh cover) immediately. It costs less when you are young.",
+            "metadata": {},
+            "order_index": 10
+          }
+        ],
+        "title": "Where Did My Money Go?"
+      },
+      {
+        "id": 202,
+        "cards": [
+          {
+            "id": 1353,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 5
+          },
+          {
+            "id": 1356,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 8
+          },
+          {
+            "id": 1349,
+            "type": "text",
+            "content": "📅 March Madness: You see seniors running around looking for bills. They are trying to save tax. You don't need to panic yet.",
+            "metadata": {},
+            "order_index": 1
+          },
+          {
+            "id": 1350,
+            "type": "text",
+            "content": "India has two tax systems now: Old Regime (Paperwork heavy) and New Regime (Simpler, lower rates).",
+            "metadata": {},
+            "order_index": 2
+          },
+          {
+            "id": 1351,
+            "type": "text",
+            "content": "🎁 The Gift: Under the New Regime, if you earn up to ₹7 Lakhs/year, your tax is ZERO. Nada. Zilch.",
+            "metadata": {},
+            "order_index": 3
+          },
+          {
+            "id": 1352,
+            "type": "text",
+            "content": "Even if you earn ₹9-10 Lakhs, the New Regime is usually better for freshers because you don't have home loans or kids' fees to claim deductions.",
+            "metadata": {},
+            "order_index": 4
+          },
+          {
+            "id": 1354,
+            "type": "text",
+            "content": "🔍 What is TDS? Tax Deducted at Source. The company cuts tax month-by-month so you don't have to pay a huge lump sum in March.",
+            "metadata": {},
+            "order_index": 6
+          },
+          {
+            "id": 1355,
+            "type": "text",
+            "content": "📄 The Golden Document: Form 16. Your company gives this to you in June. It proves you paid your taxes. NEVER lose it.",
+            "metadata": {},
+            "order_index": 7
+          },
+          {
+            "id": 1357,
+            "type": "text",
+            "content": "Standard Deduction: The government gives a flat ₹75,000 discount on your taxable income. You don't need to do anything to claim it!",
+            "metadata": {},
+            "order_index": 9
+          }
+        ],
+        "title": "The Taxman Cometh"
+      },
+      {
+        "id": 203,
+        "cards": [
+          {
+            "id": 1366,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 9
+          },
+          {
+            "id": 1363,
+            "type": "quiz",
+            "content": null,
+            "metadata": {},
+            "order_index": 6
+          },
+          {
+            "id": 1364,
+            "type": "text",
+            "content": "⚠️ The Credit Card Trap: Banks will offer you a card with a ₹1 Lakh limit. It feels like \"free money\".",
+            "metadata": {},
+            "order_index": 7
+          },
+          {
+            "id": 1365,
+            "type": "text",
+            "content": "Scenario: You spend ₹20k on the card. The bill says \"Minimum Due: ₹1,000\". You pay ₹1,000. The bank charges 40% interest on the rest.",
+            "metadata": {},
+            "order_index": 8
+          },
+          {
+            "id": 1367,
+            "type": "text",
+            "content": "Rule: If you can't afford to buy it twice with cash, you can't afford it on credit.",
+            "metadata": {},
+            "order_index": 10
+          },
+          {
+            "id": 1358,
+            "type": "text",
+            "content": "💰 Your first salary hits: ₹50,000. The temptation? Upgrade your phone, party every weekend, buy new sneakers.",
+            "metadata": {},
+            "order_index": 1
+          },
+          {
+            "id": 1359,
+            "type": "text",
+            "content": "🛑 Stop. If you spend it all, you live paycheck-to-paycheck forever. Use the \"50-30-20 Rule\".",
+            "metadata": {},
+            "order_index": 2
+          },
+          {
+            "id": 1360,
+            "type": "text",
+            "content": "🏠 50% NEEDS (₹25k): Rent, Electricity, Groceries, Commute. These are non-negotiable. If your rent is ₹20k, you are in trouble.",
+            "metadata": {},
+            "order_index": 3
+          },
+          {
+            "id": 1361,
+            "type": "text",
+            "content": "🎉 30% WANTS (₹15k): Movies, Dining Out, Netflix, Travel. Have fun! You earned it. But when this ₹15k is gone, you stay home.",
+            "metadata": {},
+            "order_index": 4
+          },
+          {
+            "id": 1362,
+            "type": "text",
+            "content": "🚀 20% INVEST (₹10k): This is for \"Future You\". It goes into Mutual Funds or Gold immediately. Before you spend a rupee.",
+            "metadata": {},
+            "order_index": 5
+          }
+        ],
+        "title": "The 50-30-20 Rule"
+      }
+    ]
+  }
+]

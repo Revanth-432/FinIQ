@@ -1,15 +1,28 @@
-import { Stack, useRouter, useSegments } from 'expo-router';
+import { Stack, useRouter, useSegments, usePathname, useGlobalSearchParams } from 'expo-router';
 import { useEffect, useState } from 'react';
 import { View, ActivityIndicator } from 'react-native';
 import { supabase } from '../lib/supabase';
 import { Session } from '@supabase/supabase-js';
 import "../global.css";
+import { BadgeProvider } from '../context/BadgeContext';
+import PostHog, { PostHogProvider } from 'posthog-react-native';
+
+export const posthog = new PostHog('phc_CfRbIG8t050xis15mLcdCa9lIJuMQC1rQHGkcskBSxy', { host: 'https://us.i.posthog.com' });
 
 export default function RootLayout() {
     const [session, setSession] = useState<Session | null>(null);
     const [initialized, setInitialized] = useState(false);
     const router = useRouter();
     const segments = useSegments();
+    const pathname = usePathname();
+    const params = useGlobalSearchParams();
+
+    // PostHog Screen Tracking
+    useEffect(() => {
+        if (pathname) {
+            posthog.screen(pathname, params);
+        }
+    }, [pathname, params]);
 
     useEffect(() => {
         // 1. Get Initial Session
@@ -34,7 +47,7 @@ export default function RootLayout() {
 
         if (session && inAuthGroup) {
             // If logged in and in auth group, go to tabs
-            router.replace('/(tabs)');
+            router.replace('/(tabs)/dashboard');
         } else if (!session && !inAuthGroup) {
             // If NOT logged in and NOT in auth group, go to login
             router.replace('/(auth)/login');
@@ -52,11 +65,15 @@ export default function RootLayout() {
     }
 
     return (
-        <Stack>
-            <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-            <Stack.Screen name="(auth)" options={{ headerShown: false }} />
-            <Stack.Screen name="module/[id]" options={{ title: 'Module' }} />
-            <Stack.Screen name="lesson/[id]" options={{ title: 'Lesson', presentation: 'modal' }} />
-        </Stack>
+        <PostHogProvider client={posthog}>
+            <BadgeProvider>
+                <Stack>
+                    <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
+                    <Stack.Screen name="(auth)" options={{ headerShown: false }} />
+                    <Stack.Screen name="module/[id]" options={{ title: 'Module' }} />
+                    <Stack.Screen name="lesson/[id]" options={{ title: 'Lesson', presentation: 'modal' }} />
+                </Stack>
+            </BadgeProvider>
+        </PostHogProvider>
     );
 }

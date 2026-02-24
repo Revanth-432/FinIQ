@@ -5,6 +5,8 @@ import { supabase } from '../../lib/supabase';
 import { Trophy, BookOpen, Play, Star, Lightbulb, TrendingUp, Book, Calendar } from 'lucide-react-native';
 import { checkAndUpdatestreak } from '../../lib/streak';
 import AsyncStorage from '@react-native-async-storage/async-storage'; // Import Storage
+import * as Progress from 'react-native-progress';
+import { useOverallProgress } from '../../hooks/useOverallProgress';
 
 // Define Types
 interface ActiveModuleState {
@@ -26,8 +28,10 @@ export default function DashboardScreen() {
     const [userName, setUserName] = useState('Friend');
     const [userXP, setUserXP] = useState(0);
     const [streak, setStreak] = useState(0);
-    const [activeModule, setActiveModule] = useState<ActiveModuleState | null>(null);
     const [dailyWord, setDailyWord] = useState<WordOfTheDay | null>(null);
+
+    // Global Progress Hook
+    const userProgressData = useOverallProgress();
 
     // New State for Dashboard Content
     const [newsletters, setNewsletters] = useState<any[]>([]);
@@ -58,30 +62,7 @@ export default function DashboardScreen() {
                 .eq('id', user.id).single();
             if (profile) setUserXP(profile.total_xp || 0);
 
-            // 2. Active Module Logic
-            const { data: modulesData } = await supabase.from('modules').select('*, lessons(*)').order('order_index');
-            const { data: userProgress } = await supabase.from('user_progress').select('lesson_id').eq('user_id', user.id);
-            const completedIds = userProgress?.map((p: any) => p.lesson_id) || [];
-
-            let foundActive = null;
-            if (modulesData) {
-                for (const mod of modulesData) {
-                    const sortedLessons = mod.lessons?.sort((a: any, b: any) => a.order_index - b.order_index) || [];
-                    const nextLesson = sortedLessons.find((l: any) => !completedIds.includes(l.id));
-                    if (nextLesson) {
-                        foundActive = {
-                            moduleTitle: mod.title,
-                            lessonTitle: nextLesson.title,
-                            lessonId: nextLesson.id,
-                            description: nextLesson.description
-                        };
-                        break;
-                    }
-                }
-            }
-            setActiveModule(foundActive);
-
-            // 3. WORD OF THE DAY
+            // 2. WORD OF THE DAY
             await fetchDailyWord();
 
             // 4. FETCH NEWSLETTERS (New)
@@ -139,8 +120,8 @@ export default function DashboardScreen() {
     }, []);
 
     const handleContinue = () => {
-        if (activeModule) {
-            router.push(`/lesson/${activeModule.lessonId}`);
+        if (userProgressData.firstUncompletedLessonId) {
+            router.push(`/lesson/${userProgressData.firstUncompletedLessonId}`);
         } else {
             router.push('/(tabs)/learn');
         }
@@ -155,7 +136,11 @@ export default function DashboardScreen() {
         >
             {/* Header */}
             <View className="pt-16 px-6 flex-row justify-between items-center mb-8">
-                <View className="flex-row items-center">
+                <TouchableOpacity
+                    className="flex-row items-center"
+                    onPress={() => router.push('/profile')}
+                    activeOpacity={0.7}
+                >
                     <View className="w-12 h-12 bg-white rounded-full items-center justify-center border-2 border-white shadow-sm mr-3">
                         <Text className="text-2xl">😎</Text>
                     </View>
@@ -163,7 +148,7 @@ export default function DashboardScreen() {
                         <Text className="text-slate-500 text-xs font-bold uppercase tracking-wider">Welcome Back,</Text>
                         <Text className="text-2xl font-bold text-slate-800" style={{ fontFamily: 'serif' }}>{userName}</Text>
                     </View>
-                </View>
+                </TouchableOpacity>
 
                 {/* Stats */}
                 <View className="flex-row space-x-2">
@@ -180,37 +165,74 @@ export default function DashboardScreen() {
                 </View>
             </View>
 
-            {/* Continue Learning */}
+            {/* Continue Learning Setup */}
             <View className="px-6 mb-6">
                 <Text className="text-slate-800 text-lg font-bold mb-4" style={{ fontFamily: 'serif' }}>Continue Learning</Text>
-                <TouchableOpacity
-                    onPress={handleContinue}
-                    activeOpacity={0.9}
-                    className="w-full bg-[#8294C4] rounded-[30px] p-6 shadow-lg shadow-indigo-200 overflow-hidden relative"
-                >
-                    <View className="absolute -right-6 -top-6 w-32 h-32 bg-white/10 rounded-full" />
-                    <View className="flex-row justify-between items-center">
-                        <View className="flex-1 mr-4">
-                            <View className="bg-white/20 self-start px-3 py-1 rounded-full mb-3">
-                                <Text className="text-white text-[10px] font-bold tracking-wider">
-                                    {activeModule ? 'CONTINUE MODULE' : 'ALL CAUGHT UP'}
+
+                {userProgressData.firstUncompletedLessonId ? (
+                    <View className="bg-indigo-600 rounded-[30px] p-6 shadow-md shadow-indigo-200">
+                        {/* Top tag */}
+                        <View className="bg-indigo-500/50 self-start px-3 py-1 rounded-full mb-4">
+                            <Text className="text-indigo-100 text-xs font-bold uppercase tracking-wider">CONTINUE MODULE</Text>
+                        </View>
+
+                        {/* Title and Button row */}
+                        <View className="flex-row justify-between items-center mb-4">
+                            <View className="flex-1 pr-4">
+                                <Text className="text-white text-xl font-bold mb-1" style={{ fontFamily: 'serif' }}>
+                                    {userProgressData.nextModuleTitle || 'Financial Foundation'}
+                                </Text>
+                                <Text className="text-indigo-200 text-sm" numberOfLines={1}>
+                                    Next: {userProgressData.nextLessonTitle || 'Keep going!'}
                                 </Text>
                             </View>
-                            <Text className="text-white text-2xl font-bold mb-1 leading-tight" style={{ fontFamily: 'serif' }}>
-                                {activeModule?.moduleTitle || "Great Job!"}
-                            </Text>
-                            <Text className="text-indigo-100 text-sm mb-4" numberOfLines={1}>
-                                {activeModule ? `Next: ${activeModule.lessonTitle}` : "You finished all available lessons."}
-                            </Text>
+                            <TouchableOpacity
+                                onPress={handleContinue}
+                                className="w-14 h-14 bg-white rounded-full items-center justify-center shadow-lg"
+                                activeOpacity={0.9}
+                            >
+                                <Play size={24} color="#4F46E5" fill="#4F46E5" style={{ marginLeft: 4 }} />
+                            </TouchableOpacity>
                         </View>
-                        <View className="w-14 h-14 bg-white/20 rounded-full items-center justify-center border-2 border-white/30">
-                            <Play size={24} color="white" fill="white" style={{ marginLeft: 4 }} />
+
+                        {/* Module Progress */}
+                        <View>
+                            <View className="flex-row justify-between mb-2">
+                                <Text className="text-indigo-200 text-xs font-bold">Module Progress</Text>
+                                <Text className="text-white font-bold text-xs">{userProgressData.nextModuleCompletedCount} / {userProgressData.nextModuleTotalCount}</Text>
+                            </View>
+                            <Progress.Bar
+                                progress={userProgressData.nextModuleTotalCount > 0 ? userProgressData.nextModuleCompletedCount / userProgressData.nextModuleTotalCount : 0}
+                                width={null}
+                                height={6}
+                                color="#FFFFFF"
+                                unfilledColor="rgba(255,255,255,0.2)"
+                                borderWidth={0}
+                            />
                         </View>
                     </View>
-                    <View className="mt-4 bg-black/10 h-2 rounded-full w-full overflow-hidden">
-                        <View className="bg-white h-full w-1/3" />
+                ) : (
+                    <View className="bg-green-600 rounded-[30px] p-6 shadow-md shadow-green-200 flex-row items-center justify-between">
+                        <View className="flex-1 pr-4">
+                            <View className="bg-green-500/50 self-start px-3 py-1 rounded-full mb-2">
+                                <Text className="text-green-100 text-xs font-bold uppercase tracking-wider">ALL COMPLETE</Text>
+                            </View>
+                            <Text className="text-white text-xl font-bold mb-1" style={{ fontFamily: 'serif' }}>
+                                You've mastered all modules!
+                            </Text>
+                            <Text className="text-green-100 text-sm">
+                                Replay your favorites or check back for new content.
+                            </Text>
+                        </View>
+                        <TouchableOpacity
+                            onPress={handleContinue}
+                            className="w-14 h-14 bg-white rounded-full items-center justify-center shadow-lg"
+                            activeOpacity={0.9}
+                        >
+                            <Play size={24} color="#16A34A" fill="#16A34A" style={{ marginLeft: 4 }} />
+                        </TouchableOpacity>
                     </View>
-                </TouchableOpacity>
+                )}
             </View>
 
             {/* 💡 WORD OF THE DAY (Sticky) */}
@@ -292,6 +314,7 @@ export default function DashboardScreen() {
                     </TouchableOpacity>
                 </View>
             </View>
+
         </ScrollView>
     );
 }
