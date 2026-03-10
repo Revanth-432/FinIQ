@@ -1,6 +1,5 @@
 # 🪙 FinIQ - The Gamified Financial Survival Guide
 
-![FinIQ Banner Placeholder](https://via.placeholder.com/1200x400?text=FinIQ+Financial+Survival+Engine)
 
 > **Catching them at Day Zero.** > FinIQ is a gamified, interactive financial education platform designed specifically for 18-24 year-old B.Tech students and freshers. We help young professionals master their money, decode their CTC, and avoid debt traps the exact moment they receive their first job offer.
 
@@ -24,11 +23,7 @@
 * **Analytics:** PostHog
 * **Native Modules:** `expo-av` (Audio), `expo-haptics` (Vibration)
 
-## 📸 Screenshots
 
-| The Learning Journey | Interactive Swipe Game | Pro Subscription Paywall |
-|:---:|:---:|:---:|
-| ![Journey](https://via.placeholder.com/250x500?text=Gamified+Roadmap) | ![Swipe Game](https://via.placeholder.com/250x500?text=Tinder-Style+Swipe+Game) | ![Paywall](https://via.placeholder.com/250x500?text=Dark+Mode+Paywall) |
 
 ## 🚀 Local Development Setup
 
