@@ -90,11 +90,7 @@ A **high-converting dark-mode premium subscription model** offering advanced inv
 
 ---
 
-# 📸 App Interface
 
-| The Dashboard | Swipe Games | Pro Paywall |
-|:---:|:---:|:---:|
-| ![Dashboard](https://via.placeholder.com/250x500?text=Dashboard+Screen) | ![Swipe Game](https://via.placeholder.com/250x500?text=Swipe+Game) | ![Paywall](https://via.placeholder.com/250x500?text=Paywall+Screen) |
 
 ---
 
